@@ -1,4 +1,6 @@
 多主题优雅个人主页
+后续计划增加主页时钟,主页音乐播放器
+增加php管理后台
 
 # 1.3最新更新
 优化加载动画
@@ -26,18 +28,25 @@
 ![2.png][2]
 ![3.png][3]
 ![4.png][4]
-
+![5.png][5]
+![6.png][6]
+![7.png][7]
 # 使用
+
 下载解压即可访问
 /static/root.css主题文件
 /static/style.css样式文件
 在此可以修改各种字体
 /static/img/favicon.ico网页ico和主页头像
 /static/script.js js文件
+
 # 关于
+
 我的个人主页是zyyo.net
 我的开源博客xtbbb.com
+
 # 缘由
+
 受到xhofe和ddiu个人主页的灵感启发
 
 感谢这二位大佬
@@ -47,7 +56,9 @@
 初个版本花了几个小时,页面并不复杂,但是在后续我花费了很多时间去优化这个主页,因为我有非常严重的强迫证,非常抓细节
 
 我真的为了这个主页的优化后续付出了非常多的心力,请还不要攻击,喜欢可以赞助,不喜欢可以走开
+
 # 特色
+
 具有白天和黑夜模式
 
 白天模式有5套精美主题
@@ -67,14 +78,19 @@ github:https://github.com/ZYYO666/homepage
 演示站:https://zyyo.net
 
 #技术栈
+
 html
 css
 js
+
 # 鸣谢
+
 iconfont图标
 Pacifico-Regular字体
 Ubuntu-Regular字体
+
 # 备注
+
 页面图标都是svg,可也自己找然后切换
 
 字体目前最新版是鸿蒙字体,可以自己设置
@@ -82,8 +98,10 @@ Ubuntu-Regular字体
 
 
   
-  [1]: 
-  [2]: 
-  [3]: 
-  [4]: 
- 
+  [1]: https://zyyo.net/img/1.jpg
+  [2]: https://zyyo.net/img/2.jpg
+  [3]: https://zyyo.net/img/3.jpg
+  [4]: https://zyyo.net/img/4.jpg
+  [5]: https://zyyo.net/img/5.jpg
+  [6]: https://zyyo.net/img/6.jpg
+  [7]: https://zyyo.net/img/7.jpg
