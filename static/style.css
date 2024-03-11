@@ -169,6 +169,7 @@ body {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(var(--back-filter));
+    -webkit-backdrop-filter: blur(var(--back-filter));
     z-index: -99999999;
     background: var(--back-filter-color);
 }
