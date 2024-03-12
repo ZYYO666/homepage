@@ -98,10 +98,10 @@ Ubuntu-Regular字体
 
 
   
-  [1]: https://zyyo.net/img/1.jpg
-  [2]: https://zyyo.net/img/2.jpg
-  [3]: https://zyyo.net/img/3.jpg
-  [4]: https://zyyo.net/img/4.jpg
-  [5]: https://zyyo.net/img/5.jpg
-  [6]: https://zyyo.net/img/6.jpg
-  [7]: https://zyyo.net/img/7.jpg
+  [1]: https://zyyo.net/img/1.jpg?a
+  [2]: https://zyyo.net/img/2.jpg?a
+  [3]: https://zyyo.net/img/3.jpg?a
+  [4]: https://zyyo.net/img/4.jpg?a
+  [5]: https://zyyo.net/img/5.jpg?a
+  [6]: https://zyyo.net/img/6.jpg?a
+  [7]: https://zyyo.net/img/7.jpg?a
