@@ -8,14 +8,14 @@
 @font-face {
     font-family: "b";
     /*英文字体*/
-    src: url(/static/font/Ubuntu-Regular.ttf);
+    src: url(../fonts/Ubuntu-Regular.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: "title";
     /*英文字体*/
-    src: url(/static/font/Pacifico-Regular.ttf);
+    src: url(../fonts/Pacifico-Regular.ttf);
     font-display: swap;
 }
 
@@ -39,20 +39,6 @@ a:focus {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-img a {
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Chrome/Safari/Opera */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
-    /* 非前缀版本 */
-    pointer-events: none;
-    /* 阻止所有指针事件，包括长按 */
-}
 
 /* 设置滚动条样式 */
 ::-webkit-scrollbar {
@@ -60,36 +46,33 @@ img a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--main-text-color, #000000);
+    background-color: var(--main_text_color, #000000);
     border-radius: 8px;
     height: 20%;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--main-bg-color, linear-gradient(50deg, #a2d0ff, #ffffff));
+    background-color: var(--main_bg_color, linear-gradient(50deg, #a2d0ff, #ffffff));
 }
+
 
 
 html[data-theme="Dark"] {
-    --svgcolor: #ffffff;
-    --main-bg-color: rgb(0, 0, 0);
-    --main-text-color: #fff;
-    --gradient-start: rgb(133, 62, 255);
-    --gradient-middle: #f76cc6;
-    --gradient-end: rgb(255, 255, 255);
-    --purple-text-color: #747bff;
-    --text-bg-color: rgb(26, 4, 48);
-    --item-bg-color: rgb(19, 20, 24);
-    --item-hover-color: rgb(19, 23, 27);
-    --item-left-title-color: rgb(255, 255, 255);
-    --item-left-text-color: rgb(142, 142, 142);
-    --footer-text-color: #646464;
-    --left-tag-item: linear-gradient(50deg, #1f2327, #000000);
-    --card-filter: 0px;
-    --back-filter: 0px;
-    --back-filter-color: #00000000;
+    --main_bg_color: rgb(0, 0, 0);
+    --main_text_color: #fff;
+    --gradient:linear-gradient(120deg, rgb(133, 62, 255), #f76cc6 30%, rgb(255, 255, 255) 60%);
+    --purple_text_color: #747bff;
+    --text_bg_color: rgb(26, 4, 48);
+    --item_bg_color: rgb(19, 20, 24);
+    --item_hover_color: rgb(19, 23, 27);
+    --item_left_title_color: rgb(255, 255, 255);
+    --item_left_text_color: rgb(142, 142, 142);
+    --footer_text_color: #646464;
+    --left_tag_item: linear-gradient(50deg, #1f2327, #000000);
+    --card_filter: 0px;
+    --back_filter: 0px;
+    --back_filter_color: #00000000;
 }
-
 
 
 
@@ -102,16 +85,15 @@ body {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    font-family: "b", "HarmonyOS_Regular", "a", sans-serif;
-    cursor: url('/static/other/sb.cur'), auto;
-    background: var(--main-bg-color);
+    font-family: "b",  "a", sans-serif;
+    background: var(--main_bg_color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     transition: color 0.1s ease;
     justify-content: center;
-    color: var(--main-text-color);
+    color: var(--main_text_color);
 
 }
 
@@ -168,9 +150,10 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur(var(--back-filter));
+    backdrop-filter: blur(var(--back_filter));
+     -webkit-backdrop-filter: blur(var(--back-filter));
     z-index: -99999999;
-    background: var(--back-filter-color);
+    background: var(--back_filter_color);
 }
 
 .zyyo-main {
@@ -217,31 +200,32 @@ body {
     border-radius: 13px;
     margin-top: 15px;
     padding: 20px;
-    backdrop-filter: blur(var(--card-filter));
-    background: var(--item-bg-color);
+    backdrop-filter: blur(var(--card_filter));
+    background: var(--item_bg_color);
 }
 
 .left-des {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
 }
 
-.left-div-item {
+.left-des-item {
     display: flex;
     align-items: center;
     line-height: 20px;
     font-size: 15px;
-    gap: 8px;
+    margin-bottom: 5px;
     overflow: hidden;
 }
-
+.left-des-item i{
+    font-size: 18px;
+    margin-right: 10px;
+}
 .left-tag {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
     padding: 14px;
 }
 
@@ -250,18 +234,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 28px;
+    margin: 0px 5px 5px 0;
     padding: 10px;
     font-size: 13px;
     border-radius: 10px;
-    background: var(--left-tag-item);
-
+    background: var(--left_tag_item);
 }
 
 #line {
     width: 100%;
     height: 200px;
     font-size: 13px;
-    padding-left: 10px;
+    padding-left: 8px;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
@@ -273,19 +257,19 @@ body {
     border-left: 2px solid #d5d5d5;
     border-radius: 0;
     scroll-snap-align: end;
-    color: var(--main-text-color);
+    color: var(--main_text_color);
 }
 
 
 
 .focus {
-    width: 15px;
-    height: 15px;
+    width: 8px;
+    height: 8px;
     border-radius: 22px;
     background-color: rgb(255 255 255);
     border: 2px solid #fff;
     position: absolute;
-    left: -9px;
+    left: -5px;
     top: 50%;
 }
 
@@ -343,7 +327,7 @@ body {
     background-position: 0%;
     font-family: "title";
     animation: backgroundSizeAnimation 10s ease-in-out infinite;
-    background-image: linear-gradient(120deg, var(--gradient-start), var(--gradient-middle) 30%, var(--gradient-end) 60%);
+      background-image:  var(--gradient);
 }
 
 @keyframes backgroundSizeAnimation {
@@ -370,13 +354,13 @@ body {
 }
 
 .purpleText {
-    color: var(--purple-text-color);
+    color: var(--purple_text_color);
     font-weight: 800;
 }
 
 .textBackground {
     font-weight: 800;
-    background: var(--text-bg-color);
+    background: var(--text_bg_color);
     border-radius: 5px;
     font-size: 17px;
     padding: 2px 4px;
@@ -384,7 +368,6 @@ body {
 
 .iconContainer {
     width: 100%;
-    gap: 8px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -405,30 +388,36 @@ body {
     box-sizing: border-box;
     border-radius: 7px;
     display: flex;
-    gap: 5px;
-    backdrop-filter: blur(var(--card-filter));
-    background: var(--item-bg-color);
+    margin-left: 10px;
+
+    backdrop-filter: blur(var(--card_filter));
+    background: var(--item_bg_color);
     align-items: center;
     justify-content: center;
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     flex-shrink: 0;
 }
-
+.iconItem i{
+    font-size: 22px;
+}
 .switch {
     width: 55px;
     height: 40px;
     box-sizing: border-box;
     border-radius: 7px;
     display: flex;
-    backdrop-filter: blur(var(--card-filter));
-    background: var(--item-bg-color);
-    gap: 5px;
+    margin-left: 10px;
+    backdrop-filter: blur(var(--card_filter));
+    background: var(--item_bg_color);
+
     align-items: center;
     justify-content: center;
     transition: width 1s ease, opacity 1s ease, transform 1s ease;
     flex-shrink: 0;
 }
-
+.iconItem i{
+    margin-right: 3px;
+}
 .iconTip {
     white-space: nowrap;
     display: none;
@@ -441,7 +430,7 @@ body {
 .iconItem:hover {
     width: 95px;
     transform: translateY(-2px);
-    background: var(--item-hover-color);
+    background: var(--item_hover_color);
 }
 
 
@@ -452,7 +441,7 @@ body {
 .switch:hover {
     width: 55px;
     /* transform: translateY(-2px); */
-    background: var(--item-hover-color);
+    background: var(--item_hover_color);
 }
 
 .tanChiShe {
@@ -467,14 +456,15 @@ body {
 
 .title {
     display: flex;
-    gap: 10px;
     align-items: center;
     font-size: 26px;
     font-weight: 800;
     margin: 20px 0;
     transition: transform 0.4s ease;
 }
-
+.title i{
+    margin-right: 8px;
+}
 .title:hover {
     transform: translateY(-5px);
 }
@@ -482,18 +472,17 @@ body {
 .projectList {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
 }
 
 .projectItem {
+    margin: 7px;
     display: flex;
-    background-color: var(--item-bg-color);
+    background-color: var(--item_bg_color);
     border-radius: 8px;
     padding: 15px;
     height: 95px;
     width: calc(25% - 15px);
-    backdrop-filter: blur(var(--card-filter));
+    backdrop-filter: blur(var(--card_filter));
     transition: opacity 0.3s ease, background-color 0.3s ease, border 0.3s ease, transform 0.2s ease;
 
 
@@ -501,12 +490,12 @@ body {
 
 .projectItem {
     display: flex;
-    background-color: var(--item-bg-color);
+    background-color: var(--item_bg_color);
     border-radius: 8px;
     padding: 15px;
     height: 100px;
     width: calc(25% - 15px);
-    backdrop-filter: blur(var(--card-filter));
+    backdrop-filter: blur(var(--card_filter));
     transition: opacity 0.5s ease, background-color 0.2s ease, border 0.2s ease, transform 0.3s ease;
 
 }
@@ -521,7 +510,7 @@ body {
 .projectItem.pressed {
     transform: scale(0.9);
     /* 缩小到原来的0.9倍 */
-    background-color: var(--item-hover-color);
+    background-color: var(--item_hover_color);
 }
 
 .projectItem:hover .projectItemLeft {
@@ -543,7 +532,7 @@ body {
 .projectItemLeft p {
     font-size: 12px;
     margin-top: 15px;
-    color: var(--item-left-text-color);
+    color: var(--item_left_text_color);
 }
 
 
@@ -553,7 +542,7 @@ body {
     margin: 0px;
 
     transition: font-size 0.4s ease;
-    color: var(--item-left-title-color);
+    color: var(--item_left_title_color);
 }
 
 .projectItemLeft {
@@ -600,9 +589,9 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
-    backdrop-filter: blur(var(--card-filter));
-    background: var(--item-bg-color);
-    color: var(--footer-text-color);
+    backdrop-filter: blur(var(--card_filter));
+    background: var(--item_bg_color);
+    color: var(--footer_text_color);
     font-size: 13px;
     bottom: 0;
 }
@@ -616,12 +605,14 @@ footer {
 
 @media (max-width: 1150px) {
     .a {
-        width: calc(50% - 10px);
+        width: calc(50% - 20px);
     }
-
+.projectItem{
+    margin: 10px;
+}
     .b {
 
-        width: calc(50% - 10px);
+        width: calc(50% - 20px);
 
 
     }
@@ -648,20 +639,15 @@ footer {
 
     .a {
 
-        width: calc(50% - 10px);
-
+        width: calc(50% - 18px);
+  margin: 9px;
 
     }
 
     .b {
         height: 110px;
-        margin-left: 10px;
-        width: calc(100% - 20px);
-    }
-
-
-    .projectList {
-        gap: 20px;
+        margin: 8px 15px;
+        width: calc(100% - 30px);
     }
 
 
@@ -699,14 +685,6 @@ footer {
 
     }
 
-    /*
-原本手机端是单列,现在双列,这行就没用了,先留着
-    .projectList {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-*/
     .skill #skillWap {
         display: block;
     }

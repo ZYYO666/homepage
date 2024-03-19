@@ -40,10 +40,7 @@
 /static/img/favicon.ico网页ico和主页头像
 /static/script.js js文件
 
-# 关于
 
-我的个人主页是zyyo.net
-我的开源博客xtbbb.com
 
 # 缘由
 
@@ -73,7 +70,7 @@
 
 github:https://github.com/ZYYO666/homepage
 
-添加QQ裙下载:560938976
+
 
 演示站:https://zyyo.net
 

@@ -1,0 +1,143 @@
+/*
+--svgcolor svg图标的颜色
+--main-bg-color主页背景
+--main-text-color文本颜色
+--gradient标题渐变颜色
+
+--purple-text-color描述紫色文本颜色
+--text-bg-color描述紫色文本背景颜色
+--item-bg-color项目背景颜色
+--item-hover-color项目鼠标移入颜色
+--item-left-title-color项目标题颜色
+--item-left-text-color项目描述颜色
+--footer-text-color底部文本颜色
+--left-tag-item左侧标签颜色
+--card-filter卡片模糊的数值
+--back-filter背景模糊的数值
+--back-filter-color全局阴影遮罩
+
+*/
+/*卡片模糊的数值非常吃性能,背景模糊的数值可以模糊也可以不模糊
+
+0为不模糊,数值越大模糊程度越高
+
+这两个任选其一进行模糊
+
+一个有数字另一个建议为0
+
+
+内置4套白天主题修改办法
+
+
+
+每套主题的结构都为html{
+    
+}
+
+只有最下面的会生效,也就是将你要设置的主题剪切到最下面
+*/
+
+
+
+
+
+
+
+
+/*非常吃性能,低配手机会卡顿*/
+/*卡片模糊背景＋黑色透明卡片+白色svg**/
+html {
+    --name: 主题1;
+    --main_bg_color: url(../img/background.jpg);
+    --main_text_color: #eeeeee;
+    --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
+    --purple_text_color: #747bff;
+    --text_bg_color: #00000040;
+    --item_bg_color: #00000038;
+    --item_hover_color: #33333338;
+    --item_left_title_color: #ffffff;
+    --item_left_text_color: #ffffff;
+    --footer_text_color: #ffffff;
+    --left_tag_item: rgb(27 42 57 / 20%);
+    --card_filter: 15px;
+    --back_filter: 0px;
+    --back_filter_color: #00000030;
+}
+
+html {
+
+    /*图片模糊背景＋白色透明卡片+黑色svg*/
+    --name: 主题2;
+    --main_bg_color: url(../img/background.jpg);
+    --main_text_color: #000000;
+    --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
+    --purple_text_color: #747bff;
+    --text_bg_color: rgb(121 163 231);
+    --item_bg_color: rgba(249, 250, 251, 0.42);
+    --item_hover_color: rgba(244, 245, 246, 0.8);
+    --item_left_title_color: #000000;
+    --item_left_text_color: #494949;
+    --footer_text_color: #ffffff;
+    --left_tag_item: #c7e1fa;
+    --card_filter: 0px;
+    --back_filter: 20px;
+    --back_filter_color: #00000030;
+}
+
+html {
+    /*蓝色渐变+黑色svg**/
+
+    --name: 主题3;
+    --main_bg_color: linear-gradient(50deg, #a2d1ff, #ffffff);
+    --main_text_color: #000000;
+    --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
+    --purple_text_color: #747bff;
+    --text_bg_color: rgb(196 217 251);
+    --item_bg_color: rgba(249, 250, 251, 0.5);
+    --item_hover_color: rgba(244, 245, 246, 0.8);
+    --item_left_title_color: #000000;
+    --item_left_text_color: #494949;
+    --footer_text_color: #222222;
+    --left_tag_item: linear-gradient(50deg, #a2d1ff, #ffffff);
+    --card_filter: 0px;
+    --back_filter: 0px;
+    --back_filter_color: #00000000;
+}
+
+html {
+    /*白色简约+黑色svg**/
+    --name: 主题4;
+    --main_bg_color: #ffffff;
+    --main_text_color: #000000;
+    --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
+    --purple_text_color: #747bff;
+    --text_bg_color: rgb(240 243 247);
+    --item_bg_color: rgb(247 247 247);
+    --item_hover_color: rgba(244, 245, 246, 0.5);
+    --item_left_title_color: #000000;
+    --item_left_text_color: #494949;
+    --footer_text_color: #222222;
+    --left_tag_item: #ffffff;
+    --card_filter: 0px;
+    --back_filter: 0px;
+    --back_filter_color: #00000000;
+}
+
+html {
+    /*图片模糊背景＋黑色透明卡片+白色svg**/
+    --name: 主题5;
+    --main_bg_color: url(../img/background.jpg);
+    --main_text_color: #eeeeee;
+    --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
+    --purple_text_color: #747bff;
+    --text_bg_color: #00000040;
+    --item_bg_color: #00000038;
+    --item_hover_color: #33333338;
+    --item_left_title_color: #ffffff;
+    --item_left_text_color: #ffffff;
+    --footer_text_color: #ffffff;
+    --left_tag_item: rgb(27 42 57 / 20%);
+    --card_filter: 0px;
+    --back_filter: 20px;
+    --back_filter_color: #00000030;
+}

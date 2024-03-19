@@ -40,7 +40,7 @@ function toggleClass(selector, className) {
     });
 }
 
-function wx(imageURL) {
+function pop(imageURL) {
     var tcMainElement = document.querySelector(".tc-img");
     if (imageURL) {
         tcMainElement.src = imageURL;
@@ -52,16 +52,13 @@ function wx(imageURL) {
 var tc = document.getElementsByClassName('tc');
 var tc_main = document.getElementsByClassName('tc-main');
 tc[0].addEventListener('click', function (event) {
-    wx();
+    pop();
 });
 tc_main[0].addEventListener('click', function (event) {
     event.stopPropagation();
 });
 
-function left() {
-    toggleClass(".left-main", "left-main-open");
-    toggleClass(".left", "left-open");
-}
+
 
 function setCookie(name, value, days) {
     var expires = "";
@@ -111,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var html = document.querySelector('html');
     var themeState = getCookie("themeState") || "Light";
-    var svgItems = document.getElementsByTagName("svg");
     var tanChiShe = document.getElementById("tanChiShe");
 
 
@@ -120,20 +116,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function changeTheme(theme) {
-
-        tanChiShe.src = "/static/svg/snake-" + theme + ".svg";
-        //切换贪吃蛇
+        tanChiShe.src = "./static/svg/snake-" + theme + ".svg";
         html.dataset.theme = theme;
-        //设置css变量主题
-        //不可调换位置,必须在设置css变量后,获取当前css变量的svgcolor
-        var svgcolor = getComputedStyle(document.documentElement).getPropertyValue('--svgcolor')
-        //获取当前主题svg颜色值
-        for (var i = 0; i < svgItems.length; i++) {
-            var paths = svgItems[i].getElementsByTagName("path");
-            for (var j = 0; j < paths.length; j++) {
-                paths[j].setAttribute("fill", svgcolor);
-            }
-        }
         setCookie("themeState", theme, 365);
         themeState = theme;
     }
