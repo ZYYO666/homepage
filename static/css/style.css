@@ -150,8 +150,13 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
+<<<<<<< HEAD:static/css/style.css
     backdrop-filter: blur(var(--back_filter));
      -webkit-backdrop-filter: blur(var(--back-filter));
+=======
+    backdrop-filter: blur(var(--back-filter));
+    -webkit-backdrop-filter: blur(var(--back-filter));
+>>>>>>> 4a23e790f7c0fbbd252409dd9da11dd1cd42690a:static/style.css
     z-index: -99999999;
     background: var(--back_filter_color);
 }

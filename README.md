@@ -1,7 +1,12 @@
 多主题优雅个人主页
 后续计划增加主页时钟,主页音乐播放器
 增加php管理后台
-
+# 1.4 最新更新
+把所有图片全部改为字体图标
+去除鼠标样式
+优化细节
+修改所有路径为相对路径
+修复其他问题
 # 1.3最新更新
 优化加载动画
 增加点击q弹动画
@@ -95,10 +100,10 @@ Ubuntu-Regular字体
 
 
   
-  [1]: https://zyyo.net/img/1.jpg
-  [2]: https://zyyo.net/img/2.jpg
-  [3]: https://zyyo.net/img/3.jpg
-  [4]: https://zyyo.net/img/4.jpg
-  [5]: https://zyyo.net/img/5.jpg
-  [6]: https://zyyo.net/img/6.jpg
-  [7]: https://zyyo.net/img/7.jpg
+  [1]: https://zyyo.net/img/1.jpg?a
+  [2]: https://zyyo.net/img/2.jpg?a
+  [3]: https://zyyo.net/img/3.jpg?a
+  [4]: https://zyyo.net/img/4.jpg?a
+  [5]: https://zyyo.net/img/5.jpg?a
+  [6]: https://zyyo.net/img/6.jpg?a
+  [7]: https://zyyo.net/img/7.jpg?a
