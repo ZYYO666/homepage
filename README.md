@@ -12,7 +12,8 @@
 演示站:zyyo.cc/index/
 
 后台:zyyo.cc/index/admin
-
+账号admin
+密码123456
 有需要添加QQ裙:560938976
 
 
