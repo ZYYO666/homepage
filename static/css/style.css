@@ -5,13 +5,14 @@
     font-display: swap;
 }
 
+/*
 @font-face {
     font-family: "b";
-    /*英文字体*/
+
     src: url(../fonts/Ubuntu-Regular.ttf);
     font-display: swap;
 }
-
+*/
 @font-face {
     font-family: "title";
     /*英文字体*/
@@ -72,6 +73,7 @@ html[data-theme="Dark"] {
     --card_filter: 0px;
     --back_filter: 0px;
     --back_filter_color: #00000000;
+    --fill:#ffffff;
 }
 
 
@@ -287,7 +289,7 @@ body {
 .zyyo-right {
     width: calc(100% - 230px);
     display: flex;
-    padding: 20px;
+    padding: 24px;
     position: relative;
     float: right;
     padding-bottom: 50px;
@@ -383,8 +385,8 @@ body {
 
 
 .iconItem {
-    width: 47px;
-    height: 40px;
+    width: 49px;
+    height: 43px;
     box-sizing: border-box;
     border-radius: 7px;
     display: flex;
@@ -397,12 +399,16 @@ body {
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     flex-shrink: 0;
 }
-.iconItem i{
+.iconItem i,.iconItem svg{
+    width: 22px;
+    height: 22px;
+    fill:var(--fill);
     font-size: 22px;
+     margin-right: 3px;
 }
 .switch {
     width: 55px;
-    height: 40px;
+    height: 43px;
     box-sizing: border-box;
     border-radius: 7px;
     display: flex;
@@ -415,9 +421,7 @@ body {
     transition: width 1s ease, opacity 1s ease, transform 1s ease;
     flex-shrink: 0;
 }
-.iconItem i{
-    margin-right: 3px;
-}
+
 .iconTip {
     white-space: nowrap;
     display: none;
@@ -462,8 +466,11 @@ body {
     margin: 20px 0;
     transition: transform 0.4s ease;
 }
-.title i{
+.title i ,.title svg{
     margin-right: 8px;
+    height: 26px;
+    width: 26px;
+   fill:var(--fill);
 }
 .title:hover {
     transform: translateY(-5px);
