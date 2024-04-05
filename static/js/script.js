@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }, 100);
 
-
+/*
     var fpsElement = document.createElement('div');
     fpsElement.id = 'fps';
     fpsElement.style.zIndex = '10000';
@@ -210,5 +210,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         step();
     })();
+    
+    */
+    
+    
+    
+    
+    
 });
 
