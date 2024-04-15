@@ -1,30 +1,16 @@
 # ZYYO主页php后台版本已经上线
-售价20元
-包含对图标,项目,分类,主题样式,标签,描述,左侧信息的增删改查
-
-方便的编辑名称,图标,点击.js事件等等
-
-可以控制贪吃蛇,侧边栏,技能的开关
-
-可以在后台切换多主题,方便的对多主题进行切换,对主题所有细节进行修改
-
 
 演示站:zyyo.cc
 
 后台:zyyo.cc/admin
 账号admin
 密码123456
-有需要添加QQ裙:560938976
-
-
-
-
-
 
 
 多主题优雅个人主页
 后续计划增加主页时钟,主页音乐播放器
 增加php管理后台
+
 # 1.4 最新更新
 把所有图片全部改为字体图标
 去除鼠标样式
@@ -124,11 +110,11 @@ Ubuntu-Regular字体
 
 
 
-  
-  [1]: https://zyyo.net/img/1.jpg?a
-  [2]: https://zyyo.net/img/2.jpg?a
-  [3]: https://zyyo.net/img/3.jpg?a
-  [4]: https://zyyo.net/img/4.jpg?a
-  [5]: https://zyyo.net/img/5.jpg?a
-  [6]: https://zyyo.net/img/6.jpg?a
-  [7]: https://zyyo.net/img/7.jpg?a
+
+[1]: https://zyyo.net/img/1.jpg?a
+[2]: https://zyyo.net/img/2.jpg?a
+[3]: https://zyyo.net/img/3.jpg?a
+[4]: https://zyyo.net/img/4.jpg?a
+[5]: https://zyyo.net/img/5.jpg?a
+[6]: https://zyyo.net/img/6.jpg?a
+[7]: https://zyyo.net/img/7.jpg?a
