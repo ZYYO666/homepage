@@ -364,6 +364,11 @@ body {
     font-weight: 800;
 }
 
+.yellowText {
+    color: var(--yellow_text_color);
+    font-weight: 800;
+}
+
 .textBackground {
     font-weight: 800;
     background: var(--text_bg_color);
