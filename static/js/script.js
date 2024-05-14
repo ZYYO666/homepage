@@ -163,13 +163,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    var pageLoading = document.querySelector("#zyyo-loading");
-    setTimeout(function () {
-        pageLoading.style.opacity = '0';
+   
 
-    }, 100);
-
-/*
     var fpsElement = document.createElement('div');
     fpsElement.id = 'fps';
     fpsElement.style.zIndex = '10000';
@@ -211,11 +206,21 @@ document.addEventListener('DOMContentLoaded', function () {
         step();
     })();
     
-    */
+    
+    
+    //pop('./static/img/tz.jpg')
     
     
     
-    
-    
+});
+
+
+
+
+var pageLoading = document.querySelector("#zyyo-loading");
+window.addEventListener('load', function() {
+    setTimeout(function () {
+        pageLoading.style.opacity = '0';
+    }, 100);
 });
 
