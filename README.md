@@ -1,5 +1,6 @@
 # ZYYO主页php后台版本已经上线
 售价20元
+
 包含对图标,项目,分类,主题样式,标签,描述,左侧信息的增删改查
 
 方便的编辑名称,图标,点击.js事件等等
@@ -54,15 +55,7 @@
 无侧边栏白天黑夜切换
 三套主题
 前台一键切换
-# 最新版图片效果
 
-![1.png][1]
-![2.png][2]
-![3.png][3]
-![4.png][4]
-![5.png][5]
-![6.png][6]
-![7.png][7]
 # 使用
 
 下载解压即可访问
@@ -90,21 +83,19 @@
 
 具有白天和黑夜模式
 
-白天模式有5套精美主题
+白天模式有5套主题
 
 模糊方式有背景整体模糊和卡片模糊,可以通过css切换主题
 
-加了数百个精美动画-页面效果,但是又杜绝花里胡哨,一切只为优雅
+原生html,css,js，未使用框架和插件,问就是不会
 
-原生html,css,js，未使用任何框架和插件,问就是不会
+github:https://github.com/ZYYO666/homepage
 
-github:https://github.com/ZYYO666/homepage-1.0
-强烈推荐,方便我在群里吹牛
 添加QQ裙下载:560938976
 
+强烈推荐,方便我在群里吹牛
+
 演示站:https://zyyo.net
-
-
 
 
 #技术栈
@@ -126,12 +117,3 @@ Ubuntu-Regular字体
 字体目前最新版是鸿蒙字体,可以自己设置
 
 
-
-  
-  [1]: https://zyyo.net/img/1.jpg?a
-  [2]: https://zyyo.net/img/2.jpg?a
-  [3]: https://zyyo.net/img/3.jpg?a
-  [4]: https://zyyo.net/img/4.jpg?a
-  [5]: https://zyyo.net/img/5.jpg?a
-  [6]: https://zyyo.net/img/6.jpg?a
-  [7]: https://zyyo.net/img/7.jpg?a
