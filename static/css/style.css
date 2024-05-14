@@ -59,7 +59,7 @@ a:focus {
 
 
 html[data-theme="Dark"] {
-    --main_bg_color: rgb(0, 0, 0);
+    
     --main_text_color: #fff;
     --gradient:linear-gradient(120deg, rgb(133, 62, 255), #f76cc6 30%, rgb(255, 255, 255) 60%);
     --purple_text_color: #747bff;
@@ -72,7 +72,7 @@ html[data-theme="Dark"] {
     --left_tag_item: linear-gradient(50deg, #1f2327, #000000);
     --card_filter: 0px;
     --back_filter: 0px;
-    --back_filter_color: #00000000;
+    --back_filter_color: #000000;
     --fill:#ffffff;
 }
 
@@ -150,12 +150,13 @@ body {
 
 .zyyo-filter {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(var(--back_filter));
-     -webkit-backdrop-filter: blur(var(--back-filter));
-    z-index: -99999999;
+    width: 100%;
+    height: 100%;
     background: var(--back_filter_color);
+    backdrop-filter:  blur(var(--back_filter));
+    -webkit-backdrop-filter: blur(var(--back_filter));
+    z-index: -99999999;
+   
 }
 
 .zyyo-main {
@@ -203,6 +204,7 @@ body {
     margin-top: 15px;
     padding: 20px;
     backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
     background: var(--item_bg_color);
 }
 
@@ -293,7 +295,7 @@ body {
 .zyyo-right {
     width: calc(100% - 230px);
     display: flex;
-    padding: 24px;
+    padding: 20px;
     position: relative;
     float: right;
     padding-bottom: 50px;
@@ -302,21 +304,22 @@ body {
 
 .welcome {
 
-    font-size: 55px;
+    font-size: 65px;
     font-weight: 800;
     margin: 20px 0;
 }
 
 .index-logo {
     flex-shrink: 0;
-    width: 45%;
+    width: 40%;
     margin-top: 30px;
     position: relative;
+    max-width: 200px;
     aspect-ratio: 1/1;
     background-size: cover;
     border-radius: 50%;
+    border: 0.5px solid #ffffff;
 }
-
 .description {
 
     font-size: 20px;
@@ -369,6 +372,7 @@ body {
     background: var(--text_bg_color);
     border-radius: 5px;
     font-size: 17px;
+    margin: 0 3px;
     padding: 2px 4px;
 }
 
@@ -397,6 +401,7 @@ body {
     margin-left: 10px;
 
     backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
     background: var(--item_bg_color);
     align-items: center;
     justify-content: center;
@@ -417,7 +422,7 @@ body {
     border-radius: 7px;
     display: flex;
     margin-left: 10px;
-    backdrop-filter: blur(var(--card_filter));
+    backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
     background: var(--item_bg_color);
 
     align-items: center;
@@ -493,7 +498,8 @@ body {
     padding: 15px;
     height: 95px;
     width: calc(25% - 15px);
-    backdrop-filter: blur(var(--card_filter));
+    backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
     transition: opacity 0.3s ease, background-color 0.3s ease, border 0.3s ease, transform 0.2s ease;
 
 
@@ -506,7 +512,7 @@ body {
     padding: 15px;
     height: 100px;
     width: calc(25% - 15px);
-    backdrop-filter: blur(var(--card_filter));
+    backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
     transition: opacity 0.5s ease, background-color 0.2s ease, border 0.2s ease, transform 0.3s ease;
 
 }
@@ -601,6 +607,7 @@ footer {
     text-align: center;
     width: 100%;
     backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
     background: var(--item_bg_color);
     color: var(--footer_text_color);
     font-size: 13px;
@@ -672,15 +679,22 @@ footer {
     }
 
     .description {
-        font-size: 16px;
+        font-size: 4vw;
     }
 
     .welcome {
-        font-size: 48px;
+        font-size: 10vw;
+        margin: 2vw 0;
 
     }
+    .iconContainer {
+  
+     margin-top: 4vw;
 
-
+}
+.projectItem{
+    padding: 10px;
+}
     .projectItemLeft p {
         font-size: 13px;
     }
@@ -749,7 +763,7 @@ footer {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transform: translateY(50%) scale(0.7);
+    transform: translateY(30%) scale(0.5);
 
 }
 
