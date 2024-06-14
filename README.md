@@ -100,7 +100,7 @@ github:https://github.com/ZYYO666/homepage
 
 强烈推荐,方便我在群里吹牛
 
-演示站:https://zyyo.net
+演示站:https://zyyo.cc
 
 
 #技术栈
