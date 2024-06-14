@@ -82,7 +82,6 @@ html[data-theme="Dark"] {
 
 
 body {
-    display: flex;
     height: 100%;
     min-height: 100vh;
     width: 100%;
@@ -94,7 +93,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     transition: color 0.1s ease;
-    justify-content: center;
     color: var(--main_text_color);
 
 }
@@ -158,15 +156,30 @@ body {
     z-index: -99999999;
    
 }
-
+.zyyo-main1 {
+    z-index: 999;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 10px #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: none;
+}
 .zyyo-main {
-
     width: 100%;
+    margin: 0 auto;
     transition: transform 0.5s ease;
     max-width: 1150px;
     position: relative;
+    display: flex;
     flex-direction: row;
 }
+
 
 .zyyo-left {
     overflow-y: scroll;
@@ -174,7 +187,9 @@ body {
     height: 100vh;
     display: flex;
     padding: 0 15px;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
     align-items: center;
     flex-direction: column;
 }
@@ -296,12 +311,10 @@ body {
     width: calc(100% - 230px);
     display: flex;
     padding: 20px;
-    position: relative;
-    float: right;
+  position: relative;
     padding-bottom: 50px;
     flex-direction: column;
 }
-
 .welcome {
 
     font-size: 65px;
@@ -738,20 +751,24 @@ footer {
 
 .tc {
     position: fixed;
+   
     display: flex;
     visibility: hidden;
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(20, 20, 20, 0.5);
     z-index: 99999;
     align-items: center;
+    top: 0;
     justify-content: center;
     flex-direction: column;
 }
 
 .tc-main {
     z-index: 100000;
+    
     width: 80%;
     max-width: 300px;
     min-height: 200px;
