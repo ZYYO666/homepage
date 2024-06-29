@@ -156,19 +156,7 @@ body {
     z-index: -99999999;
    
 }
-.zyyo-main1 {
-    z-index: 999;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 1px 1px 10px #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-}
+
 .zyyo-main {
     width: 100%;
     margin: 0 auto;
