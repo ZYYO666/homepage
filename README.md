@@ -31,6 +31,18 @@
 多主题优雅个人主页
 后续计划增加主页时钟,主页音乐播放器
 增加php管理后台
+
+# 1.6更新 2024.09.05
+增加`docker-compose`一键部署
+
+自行安装`docker`和`docker-compose`
+
+拉取本仓库代码，修改`Caddyfile`配置中第一行为你的域名，然后`docker compose up -d`启动
+
+> 就是这么简单，您无需配置ssl证书，caddy镜像会为你自动配置证书和开启https，并自动续期证书。
+
+> 贡献者：[starry](https://github.com/sky22333)
+
 # 1.5更新 2024.5.14
 修复ios浏览器背景无法正常模糊
 修复黑夜模式切换造成的不连贯卡顿
