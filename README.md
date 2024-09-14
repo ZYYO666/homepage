@@ -12,9 +12,9 @@
 可以在后台切换多主题,方便的对多主题进行切换,对主题所有细节进行修改
 
 
-演示站:zyyo.cc
+演示站:https://zyyo.me
 
-后台:zyyo.cc/admin
+后台:https://zyyo.me/admin
 账号admin
 密码123456
 
