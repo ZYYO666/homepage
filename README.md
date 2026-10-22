@@ -13,7 +13,7 @@
 >**演示站**：[https://zyyo.cc](https://zyyo.cc)  
 >**后台**：[https://zyyo.cc/admin](https://zyyo.cc/admin)  
 >**账号**：admin  
->**密码**：123456  
+>**密码**：12345678  
 
 ## 联系作者
 > QQ：3509679579  
